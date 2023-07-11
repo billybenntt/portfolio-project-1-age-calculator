@@ -12,6 +12,11 @@
 }
 
 
+.main {
+    @apply h-screen bg-zinc-300
+}
+
+
 .calculator {
-    @apply text-amber-800
+    @apply text-amber-800 bg-white max-w-2xl
 }

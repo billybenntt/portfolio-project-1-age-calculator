@@ -34,7 +34,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-family: Poppins, sans-serif; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
 }
@@ -377,6 +377,43 @@ video {
   display: none;
 }
 
+    .section-center {
+  width: 100%;
+}
+
+    @media (min-width: 480px) {
+
+  .section-center {
+    max-width: 480px;
+  }
+}
+
+    @media (min-width: 768px) {
+
+  .section-center {
+    max-width: 768px;
+  }
+}
+
+    @media (min-width: 1020px) {
+
+  .section-center {
+    max-width: 1020px;
+  }
+}
+
+    @media (min-width: 1440px) {
+
+  .section-center {
+    max-width: 1440px;
+  }
+}
+
+    .section-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -478,7 +515,17 @@ video {
 }
 
 
+.main {
+  height: 100vh;
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
+
 .calculator {
+  max-width: 42rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(146 64 14 / var(--tw-text-opacity));
 }

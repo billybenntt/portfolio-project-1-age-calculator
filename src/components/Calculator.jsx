@@ -1,8 +1,11 @@
-function Calculator() {
+import arrow from '../assets/images/icon-arrow.svg'
+
+function Calculator () {
   return (
-    <div className="calculator">
+    <section className="calculator section-center">
+
       <h2>Calculator Component</h2>
-    </div>
+    </section>
   )
 }
 

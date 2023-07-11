@@ -13,10 +13,19 @@
 
 
 .main {
-    @apply h-screen bg-zinc-300
+    @apply h-screen w-screen bg-zinc-300
+}
+
+.calculator {
+    @apply max-w-2xl pt-24
 }
 
 
-.calculator {
-    @apply text-amber-800 bg-white max-w-2xl
+.calculator-center {
+    @apply bg-white h-[400px] rounded-lg rounded-br-[100px]
+}
+
+
+.calculator-content {
+    @apply w-full p-5 flex flex-col
 }

@@ -4,28 +4,64 @@
 
 
 @layer base {
-
     .section-center {
-        @apply mx-auto container
+        @apply mx-auto container max-w-sm md:max-w-xl
     }
-
 }
-
 
 .main {
-    @apply h-screen w-screen bg-zinc-300
+    @apply h-screen w-screen bg-zinc-300 grid place-items-center
 }
 
+
 .calculator {
-    @apply max-w-2xl pt-24
+    @apply bg-white rounded-2xl rounded-br-[100px] m-0 shadow-xl
 }
 
 
 .calculator-center {
-    @apply bg-white h-[400px] rounded-lg rounded-br-[100px]
+    @apply w-full px-6 py-14 flex flex-col space-y-5
+}
+
+.calculator-input {
+    @apply flex flex-row uppercase gap-7 md:w-[70%]
+}
+
+.input-title {
+    @apply tracking-widest text-base text-gray-500 mb-1 md:text-sm
+}
+
+.input-control {
+    @apply w-full border border-red-200 focus:outline-none rounded-md p-3
+}
+
+.input-error {
+    @apply text-[10px] capitalize font-sans italic mt-1 text-primary-light-red
 }
 
 
-.calculator-content {
-    @apply w-full p-5 flex flex-col
+.calculator-btn-container {
+    @apply relative py-6 md:py-3
+}
+
+.calc-separator {
+    @apply border border-accent-gray
+}
+
+.calc-btn {
+    @apply h-14 w-14 bg-primary-purple absolute inset-0 m-auto hover:bg-black hover:border-white
+    rounded-full p-3 md:mr-0 hover:rotate-180 duration-500 cursor-pointer
+}
+
+.calculator-output-text {
+    @apply text-5xl mb-1 md:text-7xl md:mb-0 italic font-bold
+}
+
+.output-amount {
+    @apply text-primary-purple
+}
+
+
+.calc-btn-img {
+    @apply w-full
 }

@@ -8,6 +8,7 @@ export default {
     './src/components/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+
     screens: {
       'sm': '480px',
       'md': '768px',

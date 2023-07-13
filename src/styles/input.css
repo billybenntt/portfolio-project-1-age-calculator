@@ -58,7 +58,7 @@
 }
 
 .output-amount {
-    @apply text-primary-purple
+    @apply text-primary-purple pr-3
 }
 
 

@@ -683,6 +683,7 @@ video {
 }
 
 .output-amount {
+  padding-right: 0.75rem;
   --tw-text-opacity: 1;
   color: hsl(259 100% 65% / var(--tw-text-opacity));
 }

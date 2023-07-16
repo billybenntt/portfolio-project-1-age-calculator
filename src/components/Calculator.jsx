@@ -5,19 +5,8 @@ import isValidDate from '../../utilities/isValidDate.js'
 function Calculator () {
 
   const [isError, setIsError] = useState({ status: true, year: '', month: '', day: '' })
-
-  const [date, setDate] = useState({
-    day: '',
-    month: '',
-    year: '',
-  })
-
-  const [age, setAge] = useState({
-    days: -1,
-    months: -1,
-    years: -1,
-  })
-
+  const [date, setDate] = useState({ day: '', month: '', year: '' })
+  const [age, setAge] = useState({ days: -1, months: -1, years: -1 })
 
 
 
@@ -62,11 +51,16 @@ function Calculator () {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    isValidDate(date)
+    const error = isValidDate(date)
 
-    const newAge = calculateAge(date)
+    if (!error.status) {
+      const newAge = calculateAge(date)
+      setAge(newAge)
+      setIsError({ status: false, year: '', month: '', day: '' })
+    } else {
+      setIsError(error)
+    }
 
-    setAge(newAge)
   }
 
   return (
@@ -83,7 +77,7 @@ function Calculator () {
                 value={date.day}
                 className="input-control"
                 onChange={(e) => handleChange(e)}/>
-              {isError.status && <h5 className="input-error">Must be a valid Date</h5>}
+              {isError.status && <h5 className="input-error">{isError.day}</h5>}
             </div>
             <div>
               <h4 className="input-title">Month</h4>
@@ -94,7 +88,7 @@ function Calculator () {
                 value={date.month}
                 className="input-control"
                 onChange={(e) => handleChange(e)}/>
-              {isError.status && <h5 className="input-error">Must be a valid Date</h5>}
+              {isError.status && <h5 className="input-error">{isError.month}</h5>}
             </div>
             <div>
               <h4 className="input-title">Year</h4>
@@ -105,7 +99,7 @@ function Calculator () {
                 name="year"
                 className="input-control"
                 onChange={(e) => handleChange(e)}/>
-              {isError.status && <h5 className="input-error">Must be a valid Date</h5>}
+              {isError.status && <h5 className="input-error">{isError.year}</h5>}
             </div>
           </form>
 

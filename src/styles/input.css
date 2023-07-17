@@ -43,11 +43,23 @@
 }
 
 .input-control {
-    @apply w-full border border-red-200 focus:outline-none rounded-md p-3
+    @apply w-full border  focus:outline-none rounded-md p-3
 }
 
+
 .input-error {
-    @apply text-[10px] capitalize font-sans italic mt-1 text-primary-light-red
+    @apply text-[9px] capitalize font-sans italic text-primary-light-red invisible
+}
+
+.input-title.active {
+    @apply text-primary-light-red
+}
+.input-control.active {
+    @apply border border-primary-light-red
+}
+
+.input-error.active {
+    @apply visible
 }
 
 

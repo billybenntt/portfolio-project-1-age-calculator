@@ -1,38 +1,29 @@
-# Portfolio Project 1: Age Calculator
+# Project 1: Age Calculator APP
 
-The Age Calculator project is a web application that allows users to calculate their age in years, months, and days based on a submitted date. Users can enter their birthdate through a form, and upon submission, the application will display the calculated age.
+## Description
 
-#### Styles
+An APP designed to precisely calculate your age based on the input of your date of birth.
 
-##### Layout
+## Table of Contents
 
-The designs were created to the following widths:
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
-* Mobile: 375px
-* Desktop: 1440px
+## Installation
 
-##### Colors
+To install this project, follow these steps:
 
-##### Primary
+1. Clone the repository: `git clone https://github.com/billybenntt/portfolio-project-1-age-calculator.git`
+2. Navigate to the project directory: `cd portfolio-project-1-age-calculator`
+3. Install dependencies: `npm install`
 
-* Purple: hsl(259, 100%, 65%)
-* Light red: hsl(0, 100%, 67%)
+## Usage
 
-##### Neutral
+To use this project, follow these steps:
 
-* White: hsl(0, 0%, 100%)
-* Off white: hsl(0, 0%, 94%)
-* Light grey: hsl(0, 0%, 86%)
-* Smokey grey: hsl(0, 1%, 44%)
-* Off black: hsl(0, 0%, 8%)
+1. Enter your date of birth on the input box.
 
-##### Typography
+## License
 
-##### Body Copy
-
-* Font size (inputs): 32px
-
-##### Font
-
-* Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-* Weights: 400i, 700, 800i
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
